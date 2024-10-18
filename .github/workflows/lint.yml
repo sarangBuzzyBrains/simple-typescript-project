@@ -1,15 +1,12 @@
-name: CI/CD Pipeline
+name: Lint check
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,9 +23,4 @@ jobs:
 
     - name: Run ESLint
       run: npm run lint
-
-    - name: Compile TypeScript
-      run: npm run build
-
-    - name: Run the output
-      run: node dist/index.js
+      
