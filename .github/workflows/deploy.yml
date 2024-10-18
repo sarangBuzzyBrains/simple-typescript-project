@@ -40,3 +40,4 @@ jobs:
           script: |
             sudo docker pull sarangbuzzybrains/simple-typescript-project:latest
             sudo docker run --name cd-web-app sarangbuzzybrains/simple-typescript-project:latest
+            
