@@ -1,12 +1,12 @@
 name: Lint check
 
 on:
-  push:
+  pull_request:
     branches:
-      - sarang/build-check
+      - master
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,3 +23,4 @@ jobs:
 
     - name: Run ESLint
       run: npm run lint
+      
