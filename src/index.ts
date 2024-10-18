@@ -4,7 +4,7 @@ const greet = (name: string): string => {
 
 console.log(greet("World"));
 
-const a = 's';
+const a = 'sarang';
 
 
 
